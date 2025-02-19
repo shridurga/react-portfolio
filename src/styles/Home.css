@@ -1,0 +1,86 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spacing between text and image */
+    height: 100vh; /* Full viewport height */
+    padding: 0 10%; /* Adjusts left and right padding */
+    background: #0a0a0a; /* Matches the dark theme */
+    color: white;
+  }
+  
+  .hero-content {
+    max-width: 600px; /* Controls the width of the text */
+  }
+
+  .white-text {
+    color: white; /* Ensures "I'M" is always white */
+    font-weight: 700;
+  }
+  
+  .highlight {
+    color: #a855f7; /* Your existing highlight color */
+    font-weight: 700;
+  }
+  
+  
+  .hero h1 {
+    font-size: 2.8rem; /* Large heading size */
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #a855f7; 
+    margin-bottom: 1rem;
+  }
+  
+  .animated-text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #a855f7; 
+    display: inline-block;
+    min-height: 30px; /* Prevents page shift due to text length changes */
+  }
+  
+  .cursor {
+    display: inline-block;
+    font-size: 2rem;
+    color: #a855f7;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  
+  
+  /* Blinking Cursor Effect */
+  .animated-text::after {
+    content: "|";
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(20deg); } /* First wave */
+    30% { transform: rotate(0deg); }  /* Back to original */
+    45% { transform: rotate(20deg); } /* Second wave */
+    60% { transform: rotate(0deg); }  /* Back to original */
+    100% { transform: rotate(0deg); }
+  }
+  
+  .wave {
+    display: inline-block;
+    font-size: 2.5rem;
+    animation: wave-animation 1.2s ease-in-out infinite;
+    transform-origin: 70% 70%; /* Makes the wave feel more natural */
+  }
+  

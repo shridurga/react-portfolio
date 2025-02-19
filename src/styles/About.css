@@ -1,0 +1,97 @@
+/* About Section - Dark Theme */
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #0a0a0a; /* Uniform dark background */
+    text-align: center;
+    color: #ffffff; /* White text for contrast */
+    border-radius: 0; /* Removes rounded edges to keep it flat */
+}
+
+/* About Container */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Section Title */
+.about-container h2 {
+    font-size: 2.5rem;
+    color: #a855f7; /* Vibrant Purple */
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* About Text */
+.about-container p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #d1d5db; /* Light gray for readability */
+}
+
+/* Skills Section */
+.skills-container {
+    margin: 2rem 0;
+}
+
+/* Skills Title */
+.skills-container h3 {
+    font-size: 1.8rem;
+    color: #a855f7; /* Keep title color consistent */
+    margin-bottom: 1rem;
+}
+
+/* Skills List */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #1e1e1e; /* Dark gray pill shape */
+    color: #ffffff; /* White text */
+    padding: 0.7rem 1.7rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    border: 1px solid #a855f7; /* Purple border */
+}
+
+/* Hover Effect */
+.skills-list li:hover {
+    background-color: #a855f7; /* Purple background on hover */
+    color: #0a0a0a; /* Black text */
+    transform: scale(1.1);
+}
+
+/* Resume Section */
+.resume-container {
+    margin-top: 2.5rem;
+}
+
+/* Resume Button */
+.resume-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #a855f7; /* Purple button */
+    color: #0a0a0a; /* Dark text for contrast */
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.resume-btn:hover {
+    background-color: #ffffff; /* White background */
+    color: #0a0a0a; /* Black text */
+    transform: translateY(-2px);
+}

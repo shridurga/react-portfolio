@@ -1,0 +1,97 @@
+/* Experience Section - Uniform Dark Mode */
+#experience {
+  background: #0a0a0a; /* Uniform black background */
+  color: #ffffff; /* White text */
+  padding: 2rem;
+  padding-top: 110px !important;
+  font-family: "Poppins", sans-serif;
+
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.5rem;
+  text-align: center !important;
+  margin-bottom: 1.5rem;
+  color: #a855f7 !important; /* Vibrant Purple */
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Experience Container */
+.experience-container {
+  display: flex;
+  
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Experience Items - Flat Look */
+.experience-item {
+  background: #0a0a0a;
+  padding: 1.5rem;
+  border: 2px solid transparent; /* No border by default */
+  transition: border 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Hover Effect - Purple Border Appears */
+.experience-item:hover {
+  border: 2px solid #C0C0C0 ; /* Purple on hover */
+  background: #0c0c0c;
+}
+
+/* Experience Text Styling */
+.experience-item h3 {
+  font-size: 1.25rem;
+  color: #ffffff; /* White headings */
+  text-transform: uppercase;
+}
+
+.experience-item p {
+  font-size: 1rem;
+  color: #d1d5db; /* Light gray for readability */
+}
+
+/* Bullet Points */
+.experience-item ul {
+  margin-top: 0.5rem;
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.experience-item li {
+  font-size: 1rem;
+  color: #ffffff;
+  position: relative;
+  padding-left: 15px;
+}
+
+/* Custom Bullet Point - Purple */
+.experience-item li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  background-color: #a855f7; /* Vibrant Purple */
+  border-radius: 50%;
+}
+
+/* Smooth Fade-In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}

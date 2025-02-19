@@ -1,0 +1,58 @@
+/* Footer Container */
+footer {
+    background: #0a0a0a; /* Uniform dark background */
+    border-top: 2px solid #00AEEF; /* Cyber Blue border for a clean separation */
+    padding: 30px 20px;
+    text-align: center;
+    color: #ffffff; /* White text */
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    position: relative;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Social Links */
+.footer-social {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Social Link Styling */
+.footer-social a {
+    color: #00AEEF; /* Cyber Blue links */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Cyber Blue Glow */
+.footer-social a:hover {
+    color: #ffffff; /* White on hover */
+    transform: translateY(-2px);
+    text-shadow: 0 0 8px rgba(0, 174, 239, 0.7); /* Glowing effect */
+}
+
+/* Back to Top Button */
+.back-to-top {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: #0c0c0c; /* Dark button */
+    border: 2px solid #00AEEF; /* Cyber Blue border */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect - Cyber Blue Glow */
+.back-to-top:hover {
+    background: #00AEEF; /* Cyber Blue */
+    color: #0a0a0a; /* Dark text for contrast */
+    box-shadow: 0 0 15px rgba(0, 174, 239, 0.5); /* Soft glow */
+    transform: scale(1.05);
+}

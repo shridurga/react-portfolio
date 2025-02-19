@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+
+.contact-container,
+.contact-container * { 
+  font-family: "Montserrat", sans-serif !important;
+}
+/* Contact Section */
+/* Contact Section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 56vh; /* Ensures full-page height */
+  padding: 3rem 0;
+  padding-top: 120px !important; /* Proper spacing from header */
+  background: #0a0a0a; /* Black background extends fully */
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.subtitle {
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: #d1d5db;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns "Let's Connect" at the top */
+  max-width: 900px;
+  width: 100%;
+  gap: 2rem;
+  padding: 3rem;
+  flex-wrap: wrap; /* Ensures wrapping when needed */
+}
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .social-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center; /* Center-align links on small screens */
+  }
+}
+
+
+.contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  display: inline-block;
+}
+
+/* Subtle Hover Effect */
+.contact-info a:hover {
+  color: #00AEEF;
+  text-shadow: 0 0 5px rgba(0, 174, 239, 0.5);
+}
+
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00AEEF; /* Cyber Blue */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.contact-info {
+  flex : 1;
+  max-width: 400px;
+  font-size: 1rem;
+  color: #d1d5db;
+  font-weight: 500;
+}
+
+/* Hover Effect */
+.contact-info a:hover {
+  color: #00AEEF;
+  text-shadow: 0 0 8px rgba(0, 174, 239, 0.6);
+}
+
+/* Right Section - Contact Form */
+.contact-form {
+  flex: 1;
+  background: rgba(17, 17, 17, 0.95);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  max-width: 450px; /* Limits width so it's balanced with text */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 174, 239, 0.1);
+}
+
+
+/* Form Fields */
+.user {
+  width: 100%;
+  max-width: 100%; /* Prevents expansion beyond form */
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  background: #0a0a0a;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: border 0.3s ease-in-out;
+  box-sizing: border-box; /* Ensures padding and border don’t increase width */
+}
+
+
+/* Input Focus Effect */
+.user:focus {
+  border: 2px solid #ffffff; /* Turns white on focus */
+  outline: none;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007BFF, #00AEEF);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.4s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 174, 239, 0.3);
+}
+
+/* Classy Hover Effect */
+.send-btn:hover {
+  background: linear-gradient(135deg, #00AEEF, #007BFF);
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 174, 239, 0.4);
+}
+
+
+/* Ensure Footer Stays at the Bottom */
+footer {
+  background: #0a0a0a !important; /* Ensures footer background matches */
+  width: 100%;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem; /* Space between LinkedIn and GitHub */
+  justify-content: flex-start; /* Align links to the left */
+  align-items: center; /* Align icons/text properly */
+}
+.social-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.social-links a:hover {
+  color: #00AEEF;
+  text-shadow: 0 0 8px rgba(0, 174, 239, 0.6);
+}
