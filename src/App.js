@@ -18,11 +18,11 @@ const App = () => {
             <Header />
 
             <Routes> 
-                <Route path="react-portfolio/#/about" element={<About />} />
+                <Route path="/#/about" element={<About />} />
                 <Route path="/" element={<Home />} />
-                <Route path="react-portfolio/#/experience" element={<Experience />} />
-                <Route path="react-portfolio/#/projects" element={<Projects />} /> 
-                <Route path="react-portfolio/#/contact" element={<Contact />} /> 
+                <Route path="/#/experience" element={<Experience />} />
+                <Route path="/#/projects" element={<Projects />} /> 
+                <Route path="/#/contact" element={<Contact />} /> 
                 {/* Catch-all route to redirect unknown URLs to Home */}
                 <Route path="*" element={<Home />} />
              </Routes>
