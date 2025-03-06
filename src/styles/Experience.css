@@ -2,96 +2,117 @@
 #experience {
   background: #0a0a0a; /* Uniform black background */
   color: #ffffff; /* White text */
-  padding: 2rem;
-  padding-top: 110px !important;
+  padding: 3rem 6rem; /* More horizontal padding */
   font-family: "Poppins", sans-serif;
-
 }
 
 /* Title Styling */
 .title {
+  text-align: center;
   font-size: 2.5rem;
-  text-align: center !important;
   margin-bottom: 1.5rem;
-  color: #a855f7 !important; /* Vibrant Purple */
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif !important; /* Modern & clean font */
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Experience Container */
+/* Style for "My" (White) */
+.recent-text {
+  color: #ffffff; /* White */
+  font-weight: 600;
+}
+
+/* Style for "Professional Journey" (Purple) */
+.works-text {
+  color: #a855f7; /* Purple */
+  font-weight: 700;
+}
+
+
+/* Experience Container - Increased Width */
 .experience-container {
   display: flex;
-  
   flex-direction: column;
-  gap: 1.5rem;
-  max-width: 900px;
+  gap: 2rem;
+  max-width: 1100px; /* Increased width */
   margin: 0 auto;
 }
 
-/* Experience Items - Flat Look */
+/* Experience Items - More Width */
 .experience-item {
   background: #0a0a0a;
-  padding: 1.5rem;
+  padding: 2rem;
   border: 2px solid transparent; /* No border by default */
   transition: border 0.3s ease-in-out, background 0.3s ease-in-out;
+  max-width: 100%;
 }
 
-/* Hover Effect - Purple Border Appears */
+/* Hover Effect - White Border Appears */
 .experience-item:hover {
-  border: 2px solid #C0C0C0 ; /* Purple on hover */
-  background: #0c0c0c;
+  border: 2px solid #ffffff; /* White border on hover */
+  background: #111111; /* Slightly lighter background */
 }
 
 /* Experience Text Styling */
 .experience-item h3 {
-  font-size: 1.25rem;
-  color: #ffffff; /* White headings */
+  font-size: 1.4rem; /* Slightly bigger headings */
+  color: #ffffff;
   text-transform: uppercase;
 }
 
 .experience-item p {
-  font-size: 1rem;
-  color: #d1d5db; /* Light gray for readability */
+  font-size: 1.2rem; /* Bigger font */
+  color: #d1d5db;
+  margin-bottom: 1rem;
 }
 
 /* Bullet Points */
 .experience-item ul {
-  margin-top: 0.5rem;
   list-style: none;
   padding-left: 1.5rem;
 }
 
 .experience-item li {
-  font-size: 1rem;
+  font-size: 1.1rem; /* Increased size */
   color: #ffffff;
   position: relative;
-  padding-left: 15px;
+  padding-left: 20px;
+  margin-bottom: 0.5rem;
 }
 
-/* Custom Bullet Point - Purple */
+/* Custom Bullet Point */
 .experience-item li::before {
-  content: "";
+  content: "•";
   position: absolute;
   left: 0;
-  top: 7px;
-  width: 8px;
-  height: 8px;
-  background-color: #a855f7; /* Vibrant Purple */
-  border-radius: 50%;
+  top: 5px;
+  color: #a855f7; /* Purple */
+  font-size: 1.3rem;
 }
 
-/* Smooth Fade-In Animation */
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-      transform: translateY(20px);
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .experience-container {
+      max-width: 90%; /* Wider for smaller screens */
   }
-  to {
-      opacity: 1;
-      transform: translateY(0);
+
+  .experience-item {
+      max-width: 100%;
   }
 }
 
-.fade-in {
-  animation: fadeIn 1s ease-out;
+@media (max-width: 768px) {
+  #experience {
+      padding: 3rem 2rem;
+  }
+
+  .experience-container {
+      max-width: 100%;
+  }
+
+  .experience-item {
+      padding: 1.5rem;
+  }
 }

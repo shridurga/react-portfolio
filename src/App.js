@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import StarryBackground from "./components/StarryBackground"; // Import the star effect
 import "./App.css";
 
 
@@ -14,6 +15,8 @@ const App = () => {
     return (
         <Router>
             <div className="app-container">
+             {/* Background Stars Effect */}
+             <StarryBackground />
 
             <Header />
 

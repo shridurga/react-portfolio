@@ -7,7 +7,44 @@
     background: #0a0a0a; /* Matches the dark theme */
     color: white;
   }
+
+  /* Left Side - Text Content */
+.hero-content {
+  flex: 1; /* Takes 50% of the space */
+  text-align: left;
+}
   
+/* Right Side - Profile Image */
+.hero-avatar {
+  flex: 1; /* Takes 50% of the space */
+  display: flex;
+  justify-content: flex-end; /* Moves image to the right */
+}
+
+/* .avatar-image {
+  max-width: 300px; 
+  width: 100%;
+  border-radius: 0%;  */
+/* } */
+
+.avatar-image {
+  width: 400px; /* Increase width */
+  height: 400px; /* Increase height */
+  max-width: 100%; /* Ensures it remains responsive */
+  border-radius: 0%; /* Keeps the image square */
+  object-fit: contain; /* Ensures full image visibility without cropping */
+}
+
+  /* Container to Hold Text and Image */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+
   .hero-content {
     max-width: 600px; /* Controls the width of the text */
   }
@@ -83,4 +120,6 @@
     animation: wave-animation 1.2s ease-in-out infinite;
     transform-origin: 70% 70%; /* Makes the wave feel more natural */
   }
+
+  
   

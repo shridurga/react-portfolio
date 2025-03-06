@@ -46,7 +46,7 @@
 .nav-links a {
     position: relative; /* Ensures underline stays with the link */
     text-decoration: none;
-    color: #d1d5db;
+    color: #ffffff;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     transition: color 0.3s ease-in-out;

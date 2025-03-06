@@ -1,24 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-body {
+/* Prevent horizontal scroll and unwanted extra background */
+html, body {
+  overflow-x: hidden; /* Ensures no horizontal scrolling */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
-
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgb(27, 20, 41), rgb(20, 15, 35)); /* Maintains dark theme */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Ensure all sections take full width */
+#root {
+  width: 100%;
+  overflow-x: hidden;
 }
-
-/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-body {
-  margin: 0;
-  font-family: "Raleway", serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */

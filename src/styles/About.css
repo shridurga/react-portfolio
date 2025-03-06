@@ -1,97 +1,152 @@
-/* About Section - Dark Theme */
+/* About Section */
 .about-section {
-    padding: 4rem 2rem;
-    background-color: #0a0a0a; /* Uniform dark background */
-    text-align: center;
-    color: #ffffff; /* White text for contrast */
-    border-radius: 0; /* Removes rounded edges to keep it flat */
-}
-
-/* About Container */
-.about-container {
-    max-width: 900px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-/* Section Title */
-.about-container h2 {
-    font-size: 2.5rem;
-    color: #a855f7; /* Vibrant Purple */
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* About Text */
-.about-container p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    color: #d1d5db; /* Light gray for readability */
-}
-
-/* Skills Section */
-.skills-container {
-    margin: 2rem 0;
-}
-
-/* Skills Title */
-.skills-container h3 {
-    font-size: 1.8rem;
-    color: #a855f7; /* Keep title color consistent */
-    margin-bottom: 1rem;
-}
-
-/* Skills List */
-.skills-list {
+    min-height: calc(100vh - 70px - 50px); /* Full viewport height minus header/footer */
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    align-items: center;
     justify-content: center;
-    list-style: none;
+    background-color: #0a0a0a; /* Dark background */
+    color: #ffffff; /* All text in white */
+    padding: 6rem 4rem; /* Increased padding for more spacious feel */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container - Two Column Layout */
+.about-container {
+    display: flex;
+    flex-direction: row; /* Text on left, image on right */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px; /* Increased max width */
+    margin: 0 auto;
+    gap: 5rem; /* Increased gap for better spacing */
+}
+
+/* Right Side - About Content (More Width) */
+.about-right {
+    flex: 1.8; /* Increased width of text */
+    text-align: left;
+    max-width: 750px; /* Prevents text from stretching too wide */
+}
+
+/* Title - Consistent Font Size */
+.title {
+    text-align: center;
+    font-size: 2.2rem; /* Same font size as other text for consistency */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.2rem;
+    font-family: "Poppins", sans-serif !important; /* Modern & clean font */
+
+}
+
+/* Text Color & Size */
+.about-right p,
+.about-tabs span,
+.about-content li {
+    font-size: 1.2rem; /* Same font size everywhere */
+    line-height: 1.6; /* Keeps text readable */
+    color: #ffffff; /* Ensures all text is white */
+}
+
+/* Left Side - Image (No Borders or Shadows) */
+.about-left {
+    flex: 1; /* Less space than text */
+    display: flex;
+    justify-content: flex-end; /* Moves image further right */
+}
+
+.about-image {
+    max-width: 90%;
+    border-radius: 0; /* Removes any border-radius */
+    box-shadow: none; /* Removes shadow */
+}
+
+/* Tabs */
+.about-tabs {
+    display: flex;
+    gap: 2rem; /* Increased gap */
+    margin-top: 2rem;
+    font-size: 1.2rem; /* Same font size as other text */
+    position: relative;
+}
+
+/* Hover Effect - Underline Appears on Hover */
+.about-tabs span {
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.about-tabs span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 3px;
+    background-color: #a855f7; /* Purple underline */
+    transition: width 0.3s ease-in-out;
+}
+
+.about-tabs span:hover::after {
+    width: 100%; /* Expands underline on hover */
+}
+
+.about-tabs .active-tab {
+    color: #a855f7; /* Purple highlight */
+    border-bottom: 4px solid #a855f7;
+}
+
+/* Content */
+.about-content {
+    margin-top: 2rem;
+}
+
+/* List Styles */
+.about-content ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.skills-list li {
-    background-color: #1e1e1e; /* Dark gray pill shape */
-    color: #ffffff; /* White text */
-    padding: 0.7rem 1.7rem;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-    cursor: pointer;
-    border: 1px solid #a855f7; /* Purple border */
+.about-content li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 20px;
 }
 
-/* Hover Effect */
-.skills-list li:hover {
-    background-color: #a855f7; /* Purple background on hover */
-    color: #0a0a0a; /* Black text */
-    transform: scale(1.1);
+/* Custom Bullet Point */
+.about-content li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #a855f7; /* Purple bullets */
+    font-size: 1.4rem;
 }
 
-/* Resume Section */
-.resume-container {
-    margin-top: 2.5rem;
-}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column; /* Stacks text & image for smaller screens */
+        text-align: center;
+        gap: 2rem;
+    }
 
-/* Resume Button */
-.resume-btn {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background-color: #a855f7; /* Purple button */
-    color: #0a0a0a; /* Dark text for contrast */
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
+    .about-right {
+        max-width: 90%;
+    }
 
-/* Hover Effect */
-.resume-btn:hover {
-    background-color: #ffffff; /* White background */
-    color: #0a0a0a; /* Black text */
-    transform: translateY(-2px);
+    .title {
+        text-align: center;
+    }
+
+    .about-tabs {
+        justify-content: center;
+    }
+
+    .about-left {
+        justify-content: center;
+    }
 }

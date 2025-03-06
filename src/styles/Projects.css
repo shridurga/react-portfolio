@@ -7,43 +7,113 @@
     font-family: "Inter", sans-serif;
 }
 
-
-/* Title Styling - Cyber Blue Accent */
+/* Title Styling */
 .title {
-    text-align: center;
+    text-align: center  !important;
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #00AEEF; /* Cyber Blue */
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif; /* Modern & clean font */
+    font-weight: 500; /* Slightly bold but not too heavy */
+    text-transform: none; /* Removes uppercase */
 }
 
-/* Projects Grid */
+/* Style for "Recent" (White) */
+.recent-text {
+    color: #ffffff; /* White */
+    font-weight: 500;
+    text-transform: none; /* Ensures lowercase or normal text */
+}
+
+/* Style for "Works" (Purple) */
+.works-text {
+    color: #a855f7; /* Purple */
+    font-weight: 600;
+    text-transform: none; /* Ensures lowercase or normal text */
+    /* font-style: italic; Adds a slight emphasis */
+}
+/* Subtitle Styling */
+.subtitle1 {
+    display: flex; /* Enables flexbox */
+    padding-left: 0rem;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically if needed */
+    text-align: center;
+    font-size: 1.2rem;
+    color: #d1d5db; /* Light gray for readability */
+    margin: 0 auto 1.5rem; /* Centers block & adds spacing below */
+    max-width: 80%; /* Prevents it from stretching too wide */
+}
+
+/* Projects Grid - Now 3 Projects per Row */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr); /* EXACTLY 3 Projects Per Row */
+    gap: 2rem;
     padding: 1rem;
+    justify-content: center;
 }
 
-/* Project Cards */
+/* Responsive for Tablets */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Projects Per Row */
+    }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 Project Per Row */
+    }
+}
+
+/* Project Card */
 .project-card {
-    background: #111111; /* Darker black for contrast */
+    background: #111111;
     padding: 1.5rem;
     border-radius: 10px;
     border: 2px solid transparent;
     transition: border 0.3s ease-in-out, background 0.3s ease-in-out;
+    text-align: center;
 }
 
 /* Hover Effect - White Border */
 .project-card:hover {
-    border: 2px solid #ffffff; /* White border on hover */
-    background: #161616; /* Slightly lighter black */
+    border: 2px solid #ffffff;
+    background: #161616;
 }
+
+/* Laptop Frame */
+.laptop-frame {
+    position: relative;
+    width: 100%;
+    max-width: 320px; /* Adjust based on your card size */
+    margin: 0 auto;
+    background: url('../assets/laptop-frame.png') no-repeat center;
+    background-size: contain;
+    aspect-ratio: 16/10; /* Maintain realistic laptop proportions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+/* Adjusts the project image inside the frame */
+.project-image {
+    width: 100%; /* Ensures it fits the card */
+    max-width: 320px; /* Limit maximum width */
+    border-radius: 8px; /* Optional: Adds rounded corners for aesthetics */
+    object-fit: cover; /* Ensures the image scales well */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
 
 /* Project Card Headings */
 .project-card h3 {
-    color: #ffffff; /* White text */
+    color: #ffffff;
+    font-size: 1.4rem;
     margin-bottom: 0.5rem;
 }
 
@@ -51,7 +121,8 @@
 .project-card p {
     line-height: 1.6;
     margin-bottom: 1rem;
-    color: #d1d5db; /* Light gray for readability */
+    color: #d1d5db;
+    font-size: 1rem;
 }
 
 /* View Button */
@@ -59,17 +130,17 @@
     display: inline-block;
     padding: 0.6rem 1.2rem;
     background: transparent;
-    color: #00AEEF; /* Cyber Blue */
+    color: #a855f7;
     text-decoration: none;
-    border: 2px solid #00AEEF;
+    border: 2px solid #a855f7;
     border-radius: 6px;
     transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
     font-weight: 600;
 }
 
-/* Hover Effect - Cyber Blue Button */
+/* Hover Effect - Purple Button */
 .btn-view:hover {
-    background: #00AEEF;
+    background: #a855f7;
     color: #0a0a0a;
     transform: translateY(-2px);
 }
