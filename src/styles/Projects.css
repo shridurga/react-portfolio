@@ -53,19 +53,7 @@
     justify-content: center;
 }
 
-/* Responsive for Tablets */
-@media (max-width: 1024px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 Projects Per Row */
-    }
-}
 
-/* Responsive for Mobile */
-@media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: repeat(1, 1fr); /* 1 Project Per Row */
-    }
-}
 
 /* Project Card */
 .project-card {
@@ -143,4 +131,76 @@
     background: #a855f7;
     color: #0a0a0a;
     transform: translateY(-2px);
+}
+
+/* Responsive for Tablets */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Projects Per Row */
+    }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 Project Per Row */
+    }
+}
+
+@media (max-width: 422px) {
+    .title {
+        font-size: 1.8rem !important; /* Force font size */
+        max-width: 90%;
+        white-space: nowrap;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    section.hero .title {
+        font-size: 1.8rem !important; /* Force the new font size */
+    }
+
+    .subtitle1 {
+        font-size: 1rem; /* Adjust subtitle size */
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle1 {
+        font-size: 1rem; /* Reduce subtitle size */
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .projects-grid {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-card {
+        padding: 1rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
+    }
+
+    .btn-view {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }

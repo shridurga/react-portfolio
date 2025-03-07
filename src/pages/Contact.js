@@ -44,7 +44,7 @@ const Contact = () => {
                 {/* Left Section - Contact Info */}
                 <div className="contact-info">
                     <div className="title-container">
-                        <h1 className="title">
+                        <h1 className="title1">
                             <span className="recent-text">Let’s</span>&nbsp;
                             <span className="works-text">Connect</span>
                         </h1>

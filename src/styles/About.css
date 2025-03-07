@@ -150,3 +150,37 @@
         justify-content: center;
     }
 }
+
+
+@media (max-width: 480px) { /* iPhone 12 & Small Screens */
+
+    .about-container {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+        gap: 1rem; /* Reduce spacing */
+    }
+
+    .about-left {
+        display: none; /* Hide image on small screens */
+    }
+
+    .about-right {
+        max-width: 100%; /* Use full width */
+        text-align: center; /* Center text for better readability */
+    }
+
+    .title {
+        font-size: 1.8rem !important; /* Reduce title size */
+        margin-top: 2rem; /* Add some spacing */
+    }
+
+    .about-content {
+        font-size: 1rem; /* Reduce text size */
+        padding: 0 1rem; /* Add side padding */
+    }
+
+    .about-tabs {
+        flex-direction: column; /* Stack tabs vertically */
+        gap: 1rem; /* Reduce spacing */
+    }
+}

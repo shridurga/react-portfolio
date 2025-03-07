@@ -21,11 +21,6 @@
   justify-content: flex-end; /* Moves image to the right */
 }
 
-/* .avatar-image {
-  max-width: 300px; 
-  width: 100%;
-  border-radius: 0%;  */
-/* } */
 
 .avatar-image {
   width: 400px; /* Increase width */
@@ -120,6 +115,74 @@
     animation: wave-animation 1.2s ease-in-out infinite;
     transform-origin: 70% 70%; /* Makes the wave feel more natural */
   }
+
+
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 100vh; /* Ensures full height */
+      padding: 3rem 2rem; /* Adjust padding */
+      text-align: center; /* Centers text */
+    }
+  
+    .hero-content {
+      max-width: 100%;
+      margin-bottom: auto; /* Pushes text downward */
+    }
+  
+    .hero-avatar {
+      justify-content: center; /* Centers the image */
+      margin-top: auto; /* Pushes image down */
+    }
+  
+    .avatar-image {
+      width: 300px; /* Reduce size */
+      height: 300px;
+    }
+  
+    .hero h1 {
+      font-size: 2.2rem; /* Adjust heading size */
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .animated-text {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 391px) {
+    #home .hero {
+      padding: 1 rem; /* Reduce padding */
+    }
+  
+    #home .hero-content {
+      text-align: center;
+    }
+  
+    .hero-avatar {
+      margin-top: 1rem; /* Less space */
+    }
+  
+    .avatar-image {
+      width: 200px; /* Smaller image */
+      height: 200px;
+    }
+  
+    .hero h1 {
+      font-size: 1.8rem; /* Reduce heading */
+    }
+  
+    .hero h2 {
+      font-size: 1.6rem;
+    }
+  
+    .animated-text {
+      font-size: 1.2rem;
+    }
+  }
+  
 
   
   
