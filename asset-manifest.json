@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.78ff2152.css",
-    "main.js": "/react-portfolio/static/js/main.5a633078.js",
+    "main.css": "/react-portfolio/static/css/main.671f9358.css",
+    "main.js": "/react-portfolio/static/js/main.a6fd5890.js",
     "static/js/488.15c117bb.chunk.js": "/react-portfolio/static/js/488.15c117bb.chunk.js",
     "static/media/laptop-frame.png": "/react-portfolio/static/media/laptop-frame.125b8d21bdfa3cd716b8.png",
     "static/media/mouser.png": "/react-portfolio/static/media/mouser.53ee07c609d57e46ee18.png",
@@ -12,12 +12,12 @@
     "static/media/github-profile.png": "/react-portfolio/static/media/github-profile.aee0f771fbfc1e7b8fa8.png",
     "static/media/warfarin-ml.png": "/react-portfolio/static/media/warfarin-ml.6c55cc07b8ff75a7135f.png",
     "index.html": "/react-portfolio/index.html",
-    "main.78ff2152.css.map": "/react-portfolio/static/css/main.78ff2152.css.map",
-    "main.5a633078.js.map": "/react-portfolio/static/js/main.5a633078.js.map",
+    "main.671f9358.css.map": "/react-portfolio/static/css/main.671f9358.css.map",
+    "main.a6fd5890.js.map": "/react-portfolio/static/js/main.a6fd5890.js.map",
     "488.15c117bb.chunk.js.map": "/react-portfolio/static/js/488.15c117bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78ff2152.css",
-    "static/js/main.5a633078.js"
+    "static/css/main.671f9358.css",
+    "static/js/main.a6fd5890.js"
   ]
 }
